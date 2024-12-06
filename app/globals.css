@@ -19,3 +19,16 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom CSS */
+@layer utilities {
+  .gradient {
+    @apply bg-gradient-to-b from-white via-gray-300 to-gray-600;
+  }
+  .gradient-border {
+    @apply bg-gradient-to-b from-white via-green-300 to-blue-600;
+  }
+  .graditent-title {
+    @apply gradient text-transparent bg-clip-text;
+  }
+}
